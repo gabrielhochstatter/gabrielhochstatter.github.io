@@ -19,7 +19,7 @@
     <div class="row title-div">
       <div class="col">
         <h1 class="dark-blue big-header">Gabriel Hochstatter</h1>
-        <h5 class="dark-blue"><em>Web Developer</em></h5>
+        <h5 class=""><em>Web Developer</em></h5>
       </div>
     </div>
 
@@ -46,11 +46,12 @@
 
     <div class="row">
       <div class="col-md-8 col-sm-12">
-        <small class="dark-blue">Click the name of a section to expand</small>
-        <h2 id="openAbout" class="section-header">About</h2>
+        <small class="dark-blue">Click the name of a section to expand or collapse it</small>
+        <h2 id="openAbout" class="section-header">Who am I?</h2>
         <div class="collapse" id="collapseAbout">
           <p>
-            Full-stack junior developer and graduate of the highly-selective 12-week Makers Academy coding bootcamp in London.
+            Full-stack junior developer and graduate of the highly-selective 12-week
+            <a class="body-link" href="https://www.linkedin.com/in/gabriel-hochstatter/" target="_blank">Makers Academy</a> coding bootcamp in London.
              Coming from a creative but highly technical background in music production, once I discovered coding I couldn't get enough,
              and pursuing a career in software development seemed to be an obvious choice for me.
           </p>
@@ -68,18 +69,28 @@
     </div>
 
     <div class="row">
-      <div class="col">
+      <div class="col-md-8 col-sm-12">
         <h2 id="openProjects" class="section-header">Projects & Portfolio</h2>
-        <div class="collapse" id="collapseProjects">
+
+
+      </div>
+    </div>
+    <div class="row collapse" id="collapseProjects">
+      <div class="col-md-4 col-sm-12">
+        <div>
           <p>
-            I am super cool.
+            Drum Machine
           </p>
         </div>
       </div>
+
+      <div class="col-md-6 col-sm-12">
+        <h4>Screenshots:</h4>
+        <img src="img/Homepage.png" width="350">
+        <img src="img/MainKit.png" width="350">
+        <img src="img/TechnoKit.png" width="350">
+      </div>
     </div>
-
-
-
   </div>
 
   <script>
@@ -89,6 +100,10 @@
 
     $('#openAbout').click(function(){
       $('#collapseAbout').collapse('toggle');
+    });
+
+    $('#openProjects').click(function(){
+      $('#collapseProjects').collapse('toggle');
     });
   </script>
 

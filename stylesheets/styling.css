@@ -19,7 +19,9 @@ body {
 }
 
 .section-header:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #061526;
+  background-color: #A5C6E5;
 }
 
 a {
@@ -28,5 +30,17 @@ a {
 
 a:hover {
   color: #A5C6E5;
-  
+}
+
+.body-link {
+  text-decoration: underline;
+  color: #5C97DB;
+}
+
+.body-link:hover {
+  color: #A5C6E5;
+}
+
+img {
+  padding-bottom: 10px;
 }
