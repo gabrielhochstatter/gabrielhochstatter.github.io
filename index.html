@@ -47,11 +47,13 @@
     <div class="row">
       <div class="col-md-8 col-sm-12">
         <small class="dark-blue">Click the name of a section to expand or collapse it</small>
-        <h2 id="openAbout" class="section-header">Who am I?</h2>
+        <h2 id="openAbout" class="section-header">
+          Who am I? <span id="plusMinusAbout">-</span>
+        </h2>
         <div class="collapse" id="collapseAbout">
           <p>
-            Full-stack junior developer and graduate of the highly-selective 12-week
-            <a class="body-link" href="https://www.linkedin.com/in/gabriel-hochstatter/" target="_blank">Makers Academy</a> coding bootcamp in London.
+            Freshly minted web developer and graduate of the highly-selective 12-week
+            <a class="body-link" href="https://www.makers.tech" target="_blank">Makers Academy</a> coding bootcamp in London.
              Coming from a creative but highly technical background in music production, once I discovered coding I couldn't get enough,
              and pursuing a career in software development seemed to be an obvious choice for me.
           </p>
@@ -70,22 +72,58 @@
 
     <div class="row">
       <div class="col-md-8 col-sm-12">
-        <h2 id="openProjects" class="section-header">Projects & Portfolio</h2>
-
-
+        <h2 id="openProjects" class="section-header">
+          Projects & Portfolio <span id="plusMinusProjects" class="rotate">+</span>
+        </h2>
       </div>
     </div>
     <div class="row collapse" id="collapseProjects">
       <div class="col-md-4 col-sm-12">
         <div>
+          <h3 class="dark-blue">Drum Machine</h3>
+          <p><i class="fas fa-music"></i>
+            <a href="https://drum-machine-fksukfijbx.now.sh/" target="_blank">
+              Click here to check out the deployed version!
+            </a>
+          </p>
+          <p><i class="fab fa-github"></i>
+            <a href="https://drum-machine-fksukfijbx.now.sh/" target="_blank">
+              GitHub Repo
+            </a>
+          </p>
+          <h5 class="dark-blue">Description:</h5>
           <p>
-            Drum Machine
+            For my final project at Maker's Academy, I wanted to combine my music
+            production background with something fun, while learning new front-end
+            development skills. Together with a team of three other students we
+            created a simple step-sequencer drum machine app, complete with
+            different themes and soundsets. Plus there's some critters that will
+            dance along!
+          </p>
+          <h5 class="dark-blue">Tech:</h5>
+          <p>
+            <i class="fab fa-js-square"></i> JavaScript (with jQuery and Howler.js)
+          </p>
+          <p>
+            <i class="fab fa-html5"></i> HTML5
+          </p>
+          <p>
+            <i class="fab fa-css3-alt"></i> CSS3
+          </p>
+          <p>
+            <i class="fab fa-git-square"></i> Git for version control
+          </p>
+          <p>
+            <i class="fas fa-cloud-upload-alt"></i> Deployed with Zeit
+          </p>
+          <p>
+            <i class="fas fa-recycle"></i> Tested with Jasmine
           </p>
         </div>
       </div>
 
       <div class="col-md-6 col-sm-12">
-        <h4>Screenshots:</h4>
+        <h4 class="dark-blue">Screenshots:</h4>
         <img src="img/Homepage.png" width="350">
         <img src="img/MainKit.png" width="350">
         <img src="img/TechnoKit.png" width="350">
@@ -104,6 +142,22 @@
 
     $('#openProjects').click(function(){
       $('#collapseProjects').collapse('toggle');
+    });
+
+    $('#collapseAbout').on('shown.bs.collapse', function() {
+      $('#plusMinusAbout').text('-');
+    });
+
+    $('#collapseAbout').on('hidden.bs.collapse', function() {
+      $('#plusMinusAbout').text('+');
+    });
+
+    $('#collapseProjects').on('shown.bs.collapse', function() {
+      $('#plusMinusProjects').text('-');
+    });
+
+    $('#collapseProjects').on('hidden.bs.collapse', function() {
+      $('#plusMinusProjects').text('+');
     });
   </script>
 
