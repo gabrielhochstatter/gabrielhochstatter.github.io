@@ -2,11 +2,95 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/styling.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600" rel="stylesheet">
 
   <title>Gabriel Hochstatter</title>
 
 </head>
 <body>
-<h1>Hello World</h1>
+  <div class="container">
+
+    <div class="row title-div">
+      <div class="col">
+        <h1 class="dark-blue big-header">Gabriel Hochstatter</h1>
+        <h5 class="dark-blue"><em>Web Developer</em></h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <h3 class="dark-blue">Contact:</h3>
+        <p><i class="fas fa-map-marker mr-2"></i>London, UK</p>
+        <p><i class="fas fa-envelope mr-2"></i>gabrielhochstatter@gmail.com</p>
+        <p><i class="fas fa-phone mr-2"></i>07800 857 462</p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h3 class="dark-blue">Relevant Links:</h3>
+        <p>
+          <i class="fab fa-github mr-2"></i>
+          <a href="https://github.com/gabrielhochstatter" target="_blank">GitHub</a>
+        </p>
+        <p>
+          <i class="fab fa-linkedin mr-2"></i>
+          <a href="https://www.linkedin.com/in/gabriel-hochstatter/" target="_blank">LinkedIn</a>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <small class="dark-blue">Click the name of a section to expand</small>
+        <h2 id="openAbout" class="section-header">About</h2>
+        <div class="collapse" id="collapseAbout">
+          <p>
+            Full-stack junior developer and graduate of the highly-selective 12-week Makers Academy coding bootcamp in London.
+             Coming from a creative but highly technical background in music production, once I discovered coding I couldn't get enough,
+             and pursuing a career in software development seemed to be an obvious choice for me.
+          </p>
+          <p>
+            Over the past few months I have grown from an enthusiastic coding hobbyist
+            into someone who has come to value well-tested, clean and reusable code that
+            is easy to understand and expand by the next person to work on it after myself.
+          </p>
+          <p>
+            Currently seeking a position in London where I can take my skills
+            and learning even further, and where I can be proud of the project I am working on.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="openProjects" class="section-header">Projects & Portfolio</h2>
+        <div class="collapse" id="collapseProjects">
+          <p>
+            I am super cool.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('#collapseAbout').collapse('toggle');
+    });
+
+    $('#openAbout').click(function(){
+      $('#collapseAbout').collapse('toggle');
+    });
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,32 @@
+body {
+  background-color: #061526;
+  color: #A5C6E5;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+.title-div {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.dark-blue {
+  color: #5C97DB;
+}
+
+.big-header {
+  font-size: 70px;
+}
+
+.section-header:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #A5C6E5;
+}
+
+a:hover {
+  color: #A5C6E5;
+  
+}
