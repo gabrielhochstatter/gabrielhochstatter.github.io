@@ -20,6 +20,7 @@ body {
 
 .section-header:hover {
   /* text-decoration: underline; */
+  cursor: pointer;
   color: #061526;
   background-color: #A5C6E5;
 }
